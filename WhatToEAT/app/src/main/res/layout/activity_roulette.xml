@@ -7,14 +7,25 @@
     android:background="@color/colorPrimary"
     tools:context=".RouletteActivity">
 
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:tint="@color/white"
+        app:srcCompat="@drawable/back" />
 
     <com.github.mikephil.charting.charts.PieChart
         android:id="@+id/pieChart"
         android:layout_width="match_parent"
         android:layout_height="500dp"
-        android:layout_marginTop="88dp"
-        android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,11 +35,11 @@
         android:id="@+id/arrow"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="150dp"
-        android:rotation="185"
+        android:layout_marginTop="100dp"
+        android:rotation="135"
         android:tint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.835"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/arrow" />
@@ -37,16 +48,53 @@
         android:id="@+id/rotate_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="돌리기"
-        android:textColor="@color/white"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:fontFamily="@font/scdream5"
-        android:textSize="18sp"
         android:background="@drawable/stroke_button"
+        android:fontFamily="@font/scdream5"
+        android:text="돌리기"
+        android:textColor="@color/white"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pieChart" />
+        app:layout_constraintTop_toBottomOf="@+id/pieChart"
+        app:layout_constraintVertical_bias="0.349" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/stroke_button"
+        android:fontFamily="@font/scdream5"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="다음으로 가기"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pieChart"
+        app:layout_constraintVertical_bias="0.349" />
+
+    <Button
+        android:id="@+id/again_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:background="@drawable/stroke_button"
+        android:fontFamily="@font/scdream5"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="다시 돌리기"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/next_button"
+        app:layout_constraintHorizontal_bias="0.027"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pieChart"
+        app:layout_constraintVertical_bias="0.349" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
