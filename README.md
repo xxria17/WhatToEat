@@ -10,6 +10,7 @@
 
 #### 룰렛 사용
 https://github.com/PhilJay/MPAndroidChart  에서 PieChart 사용
+룰렛의 흰색 핀은 개별적인 이미지뷰입니다. 
 
 **룰렛 설정**
 ```Kotlin
