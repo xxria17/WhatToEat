@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#E28276</color>
-    <color name="colorPrimaryDark">#3D7E8A</color>
-    <color name="colorAccent">#F2826E</color>
+    <color name="colorPrimary">#EF715A</color>
+    <color name="colorPrimaryDark">#EF715A</color>
+    <color name="colorAccent">#F1B394</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
     <color name="transparent">#00000000</color>
+
+    <color name="salgo">#E28276</color>
+    <color name="dark_blue">#3D7E8A</color>
+    <color name="ivory">#ECEDE3</color>
+    <color name="yellow">#EDC836</color>
+
 </resources>
