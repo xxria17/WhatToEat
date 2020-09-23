@@ -21,7 +21,8 @@
     <string name="food_list">한식 양식 중식 일식 분식 패스트푸드 야식 기타</string>
     <string name="korean_food_list">알탕 부대찌개 김치찌개 두루치기 해장국 감자탕 냉면 갈비찜 순대국밥 닭갈비 고기 찜닭 닭볶음탕</string>
     <string name="japanese_food_list">우동 초밥 히레까스 냉모밀 가츠동 생선까스 로스까스 김치나베우동</string>
-
+    <string name="western_food_list">토마토스파게티 까르보나라 샐러드 로제파스타 스테이크</string>
+    <string name="chinese_food_list">짜장면 짬뽕 탕수육 새우볶음밥 짬뽕밥 마파두부 양장피 깐풍기 팔보채 유산슬 라조기 울면</string>
 
     <!-- Roulette layout -->
     <string name="one_more">다시 돌리기</string>

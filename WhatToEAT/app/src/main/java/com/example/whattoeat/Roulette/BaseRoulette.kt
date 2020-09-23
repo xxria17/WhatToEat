@@ -1,7 +1,8 @@
-package com.example.whattoeat
+package com.example.whattoeat.Roulette
 
 import android.graphics.Color
 import android.util.Log
+import com.example.whattoeat.BaseColor
 import com.github.mikephil.charting.animation.Easing
 import com.github.mikephil.charting.charts.PieChart
 import com.github.mikephil.charting.data.PieData
@@ -25,7 +26,7 @@ class BaseRoulette {
             holeRadius = 0f
             centerText = ""
             isDrawHoleEnabled = false
-            setEntryLabelColor(Color.DKGRAY)
+            setEntryLabelColor(Color.BLACK)
             setEntryLabelTextSize(16f)
         }
         pieChart.legend.isEnabled = false

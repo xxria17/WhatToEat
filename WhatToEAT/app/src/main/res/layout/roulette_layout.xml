@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
-    tools:context=".RandomActivity">
-
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <com.github.mikephil.charting.charts.PieChart
-        android:id="@+id/pieChart_random"
+        android:id="@+id/pieChart"
         android:layout_width="match_parent"
         android:layout_height="500dp"
         android:layout_marginLeft="20dp"
@@ -19,29 +15,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/back_button_random"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.041"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:tint="@color/white"
-        app:srcCompat="@drawable/back" />
-
 
     <TextView
-        android:id="@+id/result_textview_random"
+        android:id="@+id/result_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:fontFamily="@font/scdream9"
-        android:text="야식"
+        android:fontFamily="@font/scdream5"
+        android:text="@string/title_st"
         android:textColor="@color/black"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/arrow_random"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toTopOf="@+id/arrow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,12 +33,12 @@
         app:layout_constraintVertical_bias="0.714" />
 
     <ImageView
-        android:id="@+id/arrow_random"
+        android:id="@+id/arrow"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="100dp"
         android:rotation="135"
-        android:tint="@color/white"
+        android:tint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,24 +46,24 @@
         app:srcCompat="@drawable/arrow" />
 
     <Button
-        android:id="@+id/rotate_button_random"
+        android:id="@+id/rotate_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:background="@drawable/stroke_button"
         android:fontFamily="@font/scdream5"
-        android:text="돌리기"
-        android:textColor="@color/white"
+        android:text="@string/rotate_st"
+        android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pieChart_random"
+        app:layout_constraintTop_toBottomOf="@+id/pieChart"
         app:layout_constraintVertical_bias="0.349" />
 
     <Button
-        android:id="@+id/next_button_random"
+        android:id="@+id/next_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
@@ -87,16 +71,16 @@
         android:fontFamily="@font/scdream5"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:text="홈으로 가기"
-        android:textColor="@color/white"
+        android:text="다음으로 가기"
+        android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pieChart_random"
+        app:layout_constraintTop_toBottomOf="@+id/pieChart"
         app:layout_constraintVertical_bias="0.349" />
 
     <Button
-        android:id="@+id/again_button_random"
+        android:id="@+id/again_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
@@ -104,14 +88,13 @@
         android:fontFamily="@font/scdream5"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:text="다시 돌리기"
-        android:textColor="@color/white"
+        android:text="@string/one_more"
+        android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/next_button_random"
+        app:layout_constraintEnd_toStartOf="@+id/next_button"
         app:layout_constraintHorizontal_bias="0.027"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pieChart_random"
+        app:layout_constraintTop_toBottomOf="@+id/pieChart"
         app:layout_constraintVertical_bias="0.349" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

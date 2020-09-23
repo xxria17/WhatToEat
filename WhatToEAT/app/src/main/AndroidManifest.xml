@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.whattoeat">
 
-
     <application
         android:allowBackup="false"
         android:icon="@drawable/app_logo"
@@ -10,10 +9,12 @@
         android:roundIcon="@drawable/app_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".RandomActivity" />
-        <activity android:name=".RouletteActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Roulette.RouletteActivity"></activity>
+        <activity android:name=".Activity.CalcActivity" />
+        <activity android:name=".Activity.InputActivity" />
+        <activity android:name=".Roulette.RandomActivity" />
+        <activity android:name=".Roulette.RouletteActivity" />
+        <activity android:name=".Activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
