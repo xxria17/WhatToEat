@@ -32,6 +32,10 @@ class MainActivity : AppCompatActivity() {
         goToCalBtn.setOnClickListener {
             startActivity(Intent(this, CalcActivity::class.java))
         }
+
+        appInfo.setOnClickListener {
+            startActivity(Intent(this, AppInfoActivity::class.java))
+        }
     }
 
     private fun init() {

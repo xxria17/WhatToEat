@@ -23,6 +23,10 @@
     <string name="japanese_food_list">우동 초밥 히레까스 냉모밀 가츠동 생선까스 로스까스 김치나베우동</string>
     <string name="western_food_list">토마토스파게티 까르보나라 샐러드 로제파스타 스테이크</string>
     <string name="chinese_food_list">짜장면 짬뽕 탕수육 새우볶음밥 짬뽕밥 마파두부 양장피 깐풍기 팔보채 유산슬 라조기 울면</string>
+    <string name="etc_food_list">쌀국수 마라탕 월남쌈 도시락 카레</string>
+    <string name="night_food_list">닭발 족발 보쌈 막창 빙수</string>
+    <string name="fast_food_list">피자 치킨 서브웨이 에그드랍 햄버거</string>
+    <string name="bunsik_food_list">김밥 라면 떡볶이 오므라이스 덮밥 만두 핫도그 오뎅</string>
 
     <!-- Roulette layout -->
     <string name="one_more">다시 돌리기</string>

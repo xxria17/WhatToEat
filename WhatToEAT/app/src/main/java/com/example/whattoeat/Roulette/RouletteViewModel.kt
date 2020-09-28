@@ -1,6 +1,8 @@
 package com.example.whattoeat.Roulette
 
 import android.app.Activity
+import android.util.Log
+import com.example.whattoeat.Menu
 import com.example.whattoeat.R
 import com.github.mikephil.charting.charts.PieChart
 import com.github.mikephil.charting.data.PieData
@@ -13,31 +15,40 @@ class RouletteViewModel {
     private lateinit var pieData: PieData
     private lateinit var pieDataSet: PieDataSet
 
-    private lateinit var foodList: List<String>
-
     private val CLASSFICATION: String = "Classification"
     private val DETAIL : String = "Detail"
+    private val INPUT: String = "Input"
 
-    public fun setChartUI(data: String, activity: Activity, pieChart: PieChart, result: String) {
+    public fun setChartUI(data: String, activity: Activity, pieChart: PieChart, result: String, list: ArrayList<Menu>?) {
         val entry = mutableListOf<PieEntry>()
-
+        var rouletteList = ArrayList<String>()
         when (data) {
-            CLASSFICATION -> foodList = activity.resources.getString(R.string.food_list).split(" ")
+            CLASSFICATION -> {
+                rouletteList = activity.resources.getString(R.string.food_list).split(" ") as ArrayList<String>
+            }
+
             DETAIL -> {
                 when (result) {
-                    foodList[0] -> foodList = activity.resources.getString(R.string.korean_food_list).split(" ")
-                    foodList[1] -> foodList = activity.resources.getString(R.string.western_food_list).split(" ")
-                    foodList[2] -> foodList = activity.resources.getString(R.string.chinese_food_list).split(" ")
-                    foodList[3] -> foodList = activity.resources.getString(R.string.japanese_food_list).split(" ")
-                    foodList[4] -> foodList = listOf("김밥", "라면", "떡볶이", "오므라이스", "덮밥", "만두", "핫도그", "오뎅")
-                    foodList[5] -> foodList = listOf("피자", "치킨", "서브웨이", "에그드랍", "햄버거")
-                    foodList[6] -> foodList = listOf("닭발", "족발", "보쌈", "막창", "빙수")
-                    foodList[7] -> foodList = listOf("쌀국수", "마라탕", "월남쌈", "도시락", "카레")
+                    "한식" -> rouletteList = activity.resources.getString(R.string.korean_food_list).split(" ") as ArrayList<String>
+                    "양식" -> rouletteList = activity.resources.getString(R.string.western_food_list).split(" ") as ArrayList<String>
+                    "중식" -> rouletteList = activity.resources.getString(R.string.chinese_food_list).split(" ") as ArrayList<String>
+                    "일식" -> rouletteList = activity.resources.getString(R.string.japanese_food_list).split(" ") as ArrayList<String>
+                    "분식" -> rouletteList = activity.resources.getString(R.string.bunsik_food_list).split(" ") as ArrayList<String>
+                    "패스트푸드" -> rouletteList = activity.resources.getString(R.string.fast_food_list).split(" ") as ArrayList<String>
+                    "야식" -> rouletteList = activity.resources.getString(R.string.night_food_list).split(" ") as ArrayList<String>
+                    "기타" -> rouletteList = activity.resources.getString(R.string.etc_food_list).split(" ") as ArrayList<String>
+                }
+            }
+            INPUT -> {
+                if (list != null) {
+                    for (item in list) {
+                        rouletteList.add(item.menu)
+                    }
                 }
             }
         }
 
-        for (food in foodList) {
+        for (food in rouletteList) {
             entry.add(PieEntry(2f, food))
         }
 

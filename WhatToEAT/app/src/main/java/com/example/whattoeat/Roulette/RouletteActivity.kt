@@ -1,10 +1,15 @@
 package com.example.whattoeat.Roulette
 
+import android.content.Intent
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import com.example.whattoeat.Activity.MainActivity
+import com.example.whattoeat.Menu
 import com.example.whattoeat.R
 import com.github.mikephil.charting.charts.PieChart
 
@@ -20,13 +25,31 @@ class RouletteActivity : AppCompatActivity() {
     private val rouletteViewModel = RouletteViewModel()
     private var currentCase = ""
 
+    private lateinit var menuArrayList: ArrayList<Menu>
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_roulette)
 
         init()
-        currentCase = "Classification"
-        rouletteViewModel.setChartUI(currentCase, this@RouletteActivity, pieChart, "")
+        if (intent.getStringExtra("current case") != null) {
+            if (intent.getStringExtra("current case").equals("input")) {
+                currentCase = "Input"
+                menuArrayList = ArrayList<Menu>()
+                menuArrayList = intent.getSerializableExtra("list") as ArrayList<Menu>
+                rouletteViewModel.setChartUI(
+                    currentCase,
+                    this@RouletteActivity,
+                    pieChart,
+                    "",
+                    menuArrayList
+                )
+                nextButton.text = resources.getString(R.string.go_home)
+            }
+        } else {
+            currentCase = "Classification"
+            rouletteViewModel.setChartUI(currentCase, this@RouletteActivity, pieChart, "", null)
+        }
 
         rotateButton.setOnClickListener {
             rotate()
@@ -39,8 +62,10 @@ class RouletteActivity : AppCompatActivity() {
             } else {
                 nextButton.text = resources.getString(R.string.go_home)
                 currentCase = "Detail"
-                rouletteViewModel.setChartUI(currentCase, this@RouletteActivity, pieChart,
-                    resultTextView.text as String
+                rouletteViewModel.setChartUI(
+                    currentCase, this@RouletteActivity, pieChart,
+                    resultTextView.text as String,
+                    null
                 )
                 settingButton(1)
             }
@@ -51,7 +76,7 @@ class RouletteActivity : AppCompatActivity() {
         }
     }
 
-    private fun rotate(){
+    private fun rotate() {
         val result: String = rouletteViewModel.rotateRoulette(currentCase, pieChart)
         resultTextView.postDelayed(Runnable {
             run() {
@@ -77,9 +102,14 @@ class RouletteActivity : AppCompatActivity() {
     private fun settingButton(case: Int) {
         if (case == 0) {
             againButton.visibility = View.VISIBLE
-            nextButton.visibility = View.VISIBLE
+            nextButton.postDelayed(Runnable {
+                run() {
+                    nextButton.visibility = View.VISIBLE
+                }
+            }, 850)
+
             rotateButton.visibility = View.GONE
-        } else {
+        } else if (case == 1) {
             againButton.visibility = View.GONE
             nextButton.visibility = View.GONE
             resultTextView.visibility = View.GONE
