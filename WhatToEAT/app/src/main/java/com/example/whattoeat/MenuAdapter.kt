@@ -1,5 +1,6 @@
 package com.example.whattoeat
 
+import android.content.res.ColorStateList
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,8 +10,8 @@ import androidx.recyclerview.widget.RecyclerView
 class MenuAdapter(private var menuList: ArrayList<Menu>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-//        val numberText: TextView = itemView.findViewById(R.id.item_numbering)
         val menuText: TextView = itemView.findViewById(R.id.item_menu)
+        val menuView: View = itemView.findViewById(R.id.input_view)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
@@ -26,7 +27,9 @@ class MenuAdapter(private var menuList: ArrayList<Menu>) : RecyclerView.Adapter<
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         val mViewHolder: ViewHolder = holder as ViewHolder
-//        mViewHolder.numberText.text = (position + 1).toString()
+        val baseColor = BaseColor()
+        val chartColor = baseColor.CHART_COLOR.toMutableList()
         mViewHolder.menuText.text = menuList[position].menu
+        mViewHolder.menuView.backgroundTintList = ColorStateList.valueOf(chartColor[position])
     }
 }
