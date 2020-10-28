@@ -1,14 +1,15 @@
 <resources>
-    <string name="app_name">오늘 뭐먹지</string>
+    <string name="app_name">뭐먹양</string>
 
     <!-- Main layout -->
-    <string name="title_st">오늘 뭐 먹지?</string>
+    <string name="title_st">오늘 뭐 먹을거양?</string>
 
     <string name="random_st">랜덤 돌리기</string>
     <string name="random_desc">임의로 정해진 메뉴가 \n적힌 돌림판을 돌립니다.</string>
     <string name="question_mark">\?</string>
 
     <string name="input_st">직접입력 돌리기</string>
+    <string name="input_title">뭐를 룰렛에 추가할거양?</string>
     <string name="input_desc">원하는 메뉴를 직접 입력해서\n돌림판을 돌립니다.</string>
 
     <string name="who_cash">계산은 누가?</string>
@@ -32,4 +33,18 @@
     <string name="one_more">다시 돌리기</string>
     <string name="go_home">홈으로 가기</string>
     <string name="rotate_st">돌리기</string>
+
+    <!--어플 정보-->
+    <string name="license">Copyright 2020 Philipp Jahoda \n\n
+Licensed under the Apache License, Version 2.0 (the "License");\n
+you may not use this file except in compliance with the License.\n
+You may obtain a copy of the License at\n
+\n
+    http://www.apache.org/licenses/LICENSE-2.0 \n
+\n
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS, \n
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. \n
+See the License for the specific language governing permissions and
+limitations under the License.\n\n Icons made by "https://www.flaticon.com/authors/freepik" </string>
 </resources>
