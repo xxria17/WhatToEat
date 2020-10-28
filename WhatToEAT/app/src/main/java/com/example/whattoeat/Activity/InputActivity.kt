@@ -1,12 +1,12 @@
 package com.example.whattoeat.Activity
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.whattoeat.Menu
@@ -20,13 +20,13 @@ class InputActivity : AppCompatActivity() {
     private lateinit var editBtn: Button
     private lateinit var menuList: RecyclerView
 
-    private lateinit var nextButton: ImageView
+    private lateinit var nextButton: TextView
     private lateinit var backButton: ImageView
 
-    private lateinit var menuArrayList : ArrayList<Menu>
+    private lateinit var menuArrayList: ArrayList<Menu>
 
     private lateinit var layoutManager: RecyclerView.LayoutManager
-    private lateinit var adapter : MenuAdapter
+    private lateinit var adapter: MenuAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,7 +40,6 @@ class InputActivity : AppCompatActivity() {
         editBtn.setOnClickListener {
             menu = editMenu.text.toString()
             menuArrayList.add(Menu(menu))
-            Log.d("!!!!!!", menuArrayList.toString())
             adapter = MenuAdapter(menuArrayList)
             menuList.adapter = adapter
 
