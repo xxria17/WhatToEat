@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".Activity.CalcActivity">
 
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/calc_adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:adSize="BANNER"
+        app:adUnitId="@string/banner_ad_unit_id_for_test"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/arrow_img"
         android:layout_width="200dp"
@@ -14,15 +24,16 @@
         app:layout_constraintBottom_toTopOf="@+id/calc_rotate_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/uparrow" />
+        app:layout_constraintTop_toBottomOf="@+id/calc_adView"
+        app:srcCompat="@drawable/uparrow"
+        android:contentDescription="@string/arrow_img" />
 
     <Button
         android:id="@+id/calc_rotate_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="56dp"
-        android:text="돌리기"
+        android:text="@string/rotate_st"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/stroke_button"

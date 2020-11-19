@@ -60,8 +60,8 @@
                     android:layout_width="350dp"
                     android:layout_height="150dp"
                     android:layout_marginTop="40dp"
-                    android:alpha="0.5"
-                    android:backgroundTint="#E6ADB9"
+                    android:alpha="0.3"
+                    android:backgroundTint="#E76B6A"
                     android:foreground="?attr/selectableItemBackground"
                     android:background="@drawable/random_btn_design"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -74,28 +74,41 @@
                     android:layout_width="350dp"
                     android:layout_height="150dp"
                     android:layout_marginTop="20dp"
-                    android:alpha="0.5"
+                    android:alpha="0.3"
                     android:foreground="?attr/selectableItemBackground"
                     android:background="@drawable/random_btn_design"
-                    android:backgroundTint="#BDDBE6"
+                    android:backgroundTint="#249C9A"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.491"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/go_to_random_btn" />
 
                 <View
+                    android:id="@+id/go_to_location_btn"
+                    android:layout_width="350dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp"
+                    android:alpha="0.3"
+                    android:background="@drawable/random_btn_design"
+                    android:backgroundTint="#9C27B0"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/go_to_input_btn" />
+
+                <View
                     android:id="@+id/go_to_calc_btn"
                     android:layout_width="350dp"
                     android:layout_height="150dp"
                     android:layout_marginTop="20dp"
-                    android:alpha="0.5"
-                    android:foreground="?attr/selectableItemBackground"
+                    android:alpha="0.3"
                     android:background="@drawable/random_btn_design"
-                    android:backgroundTint="#F5E9B1"
+                    android:backgroundTint="#F7C400"
+                    android:foreground="?attr/selectableItemBackground"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.491"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/go_to_input_btn" />
+                    app:layout_constraintTop_toBottomOf="@+id/go_to_location_btn" />
 
                 <TextView
                     android:id="@+id/textView2"
@@ -103,7 +116,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="44dp"
                     android:layout_marginEnd="52dp"
-                    android:fontFamily="@font/scdream5"
                     android:text="@string/random_st"
                     android:textColor="@color/black"
                     android:textSize="18sp"
@@ -117,7 +129,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="44dp"
-                    android:fontFamily="@font/scdream5"
                     android:text="@string/input_st"
                     android:textColor="@color/black"
                     android:textSize="18sp"
@@ -132,7 +143,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="44dp"
                     android:layout_marginEnd="44dp"
-                    android:fontFamily="@font/scdream5"
                     android:text="@string/who_cash"
                     android:textColor="@color/black"
                     android:textSize="18sp"
@@ -140,6 +150,19 @@
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toEndOf="@+id/imageView3"
                     app:layout_constraintTop_toTopOf="@+id/go_to_calc_btn" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:text="위치 랜덤 돌리기"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/go_to_location_btn"
+                    app:layout_constraintHorizontal_bias="0.526"
+                    app:layout_constraintStart_toEndOf="@+id/imageView6"
+                    app:layout_constraintTop_toTopOf="@+id/go_to_location_btn" />
 
                 <ImageView
                     android:id="@+id/imageView"
@@ -242,6 +265,30 @@
                     app:layout_constraintStart_toEndOf="@+id/imageView3"
                     app:layout_constraintTop_toBottomOf="@+id/textView4"
                     app:layout_constraintVertical_bias="0.156" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/go_to_location_btn"
+                    app:layout_constraintStart_toStartOf="@+id/go_to_location_btn"
+                    app:layout_constraintTop_toTopOf="@+id/go_to_location_btn"
+                    app:layout_constraintVertical_bias="0.533"
+                    app:srcCompat="@drawable/location" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="현재 위치를 입력받아  \n돌림판을 돌립니다."
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/go_to_location_btn"
+                    app:layout_constraintEnd_toEndOf="@+id/go_to_location_btn"
+                    app:layout_constraintHorizontal_bias="0.437"
+                    app:layout_constraintStart_toEndOf="@+id/imageView6"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12"
+                    app:layout_constraintVertical_bias="0.218" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
