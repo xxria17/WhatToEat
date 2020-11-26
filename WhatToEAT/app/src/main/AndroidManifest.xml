@@ -1,28 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.whattoeat">
+    package="com.dohxxn.whattoeat"
+    android:versionCode="2"
+    android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="false"
-        android:icon="@drawable/sheep"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/sheep"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.SplashActivity">
+        <activity android:name="com.dohxxn.whattoeat.Activity.LocationActivity"></activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+
+        <activity android:name="com.dohxxn.whattoeat.Activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.AppInfoActivity" />
-        <activity android:name=".Roulette.RouletteActivity" />
-        <activity android:name=".Activity.CalcActivity" />
-        <activity android:name=".Activity.InputActivity" />
-        <activity android:name=".Activity.MainActivity">
-
-        </activity>
+        <activity android:name="com.dohxxn.whattoeat.Activity.AppInfoActivity" />
+        <activity android:name="com.dohxxn.whattoeat.Roulette.RouletteActivity" />
+        <activity android:name="com.dohxxn.whattoeat.Activity.CalcActivity" />
+        <activity android:name="com.dohxxn.whattoeat.Activity.InputActivity" />
+        <activity android:name="com.dohxxn.whattoeat.Activity.MainActivity"></activity>
     </application>
 
 </manifest>

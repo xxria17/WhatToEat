@@ -33,6 +33,10 @@
     <string name="one_more">다시 돌리기</string>
     <string name="go_home">홈으로 가기</string>
     <string name="rotate_st">돌리기</string>
+    <string name="next">다음으로 가기</string>
+
+    <!-- Image View -->
+    <string name="arrow_img">화살표 돌리기</string>
 
     <!--어플 정보-->
     <string name="license">Copyright 2020 Philipp Jahoda \n\n
@@ -46,5 +50,11 @@ Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS, \n
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. \n
 See the License for the specific language governing permissions and
-limitations under the License.\n\n Icons made by "https://www.flaticon.com/authors/freepik" </string>
+limitations under the License.\n\n Sheep, Arrow, Cashier, Check, Edit Icons made by Freepik from www.flaticon.com/n
+    </string>
+
+    <!--Admob-->
+    <string name="admob_app_id">ca-app-pub-3267638572021477~3862143259</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3267638572021477/2357489897</string>
+    <string name="banner_ad_unit_id_for_test">ca-app-pub-3940256099942544/6300978111</string>
 </resources>
