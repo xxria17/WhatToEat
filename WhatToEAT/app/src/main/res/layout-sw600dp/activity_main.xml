@@ -156,7 +156,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="32dp"
-                    android:text="위치 랜덤 돌리기"
+                    android:text="@string/location_random_st"
                     android:textColor="@color/black"
                     android:textSize="26sp"
                     app:layout_constraintEnd_toEndOf="@+id/go_to_location_btn"
@@ -275,13 +275,14 @@
                     app:layout_constraintStart_toStartOf="@+id/go_to_location_btn"
                     app:layout_constraintTop_toTopOf="@+id/go_to_location_btn"
                     app:layout_constraintVertical_bias="0.533"
-                    app:srcCompat="@drawable/location" />
+                    app:srcCompat="@drawable/location"
+                    android:contentDescription="@string/location_st" />
 
                 <TextView
                     android:id="@+id/textView13"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="현재 위치를 입력받아  \n돌림판을 돌립니다."
+                    android:text="@string/location_random_desc"
                     android:textSize="18sp"
                     app:layout_constraintBottom_toBottomOf="@+id/go_to_location_btn"
                     app:layout_constraintEnd_toEndOf="@+id/go_to_location_btn"

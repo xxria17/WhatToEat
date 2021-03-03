@@ -42,7 +42,8 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/arrow" />
+        app:srcCompat="@drawable/arrow"
+        android:contentDescription="@string/arrow_img" />
 
     <Button
         android:id="@+id/rotate_button"
@@ -70,7 +71,7 @@
         android:background="@drawable/stroke_button"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:text="다음으로 가기"
+        android:text="@string/next"
         android:textColor="@color/white"
         android:textSize="15sp"
         android:textStyle="bold"

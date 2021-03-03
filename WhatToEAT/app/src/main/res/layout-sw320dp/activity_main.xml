@@ -57,7 +57,7 @@
 
                 <View
                     android:id="@+id/go_to_random_btn"
-                    android:layout_width="270dp"
+                    android:layout_width="300dp"
                     android:layout_height="130dp"
                     android:layout_marginTop="40dp"
                     android:alpha="0.3"
@@ -71,7 +71,7 @@
 
                 <View
                     android:id="@+id/go_to_input_btn"
-                    android:layout_width="270dp"
+                    android:layout_width="300dp"
                     android:layout_height="130dp"
                     android:layout_marginTop="20dp"
                     android:alpha="0.3"
@@ -85,7 +85,7 @@
 
                 <View
                     android:id="@+id/go_to_location_btn"
-                    android:layout_width="270dp"
+                    android:layout_width="300dp"
                     android:layout_height="130dp"
                     android:layout_marginTop="20dp"
                     android:alpha="0.3"
@@ -98,7 +98,7 @@
 
                 <View
                     android:id="@+id/go_to_calc_btn"
-                    android:layout_width="270dp"
+                    android:layout_width="300dp"
                     android:layout_height="130dp"
                     android:layout_marginTop="20dp"
                     android:alpha="0.3"
@@ -156,11 +156,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="36dp"
-                    android:text="위치 랜덤 돌리기"
+                    android:text="@string/location_random_st"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="@+id/go_to_location_btn"
-                    app:layout_constraintHorizontal_bias="0.342"
+                    app:layout_constraintHorizontal_bias="0.27"
                     app:layout_constraintStart_toEndOf="@+id/imageView6"
                     app:layout_constraintTop_toTopOf="@+id/go_to_location_btn" />
 
@@ -181,7 +181,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/random_desc"
-                    android:textSize="10sp"
+                    android:textSize="12sp"
                     app:layout_constraintBottom_toBottomOf="@+id/go_to_random_btn"
                     app:layout_constraintEnd_toEndOf="@+id/go_to_random_btn"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -244,7 +244,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
                     android:text="@string/input_desc"
-                    android:textSize="10sp"
+                    android:textSize="12sp"
                     app:layout_constraintBottom_toBottomOf="@+id/go_to_input_btn"
                     app:layout_constraintEnd_toEndOf="@+id/go_to_input_btn"
                     app:layout_constraintHorizontal_bias="0.318"
@@ -257,7 +257,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/who_desc"
-                    android:textSize="10sp"
+                    android:textSize="12sp"
                     app:layout_constraintBottom_toBottomOf="@+id/go_to_calc_btn"
                     app:layout_constraintEnd_toEndOf="@+id/go_to_calc_btn"
                     app:layout_constraintHorizontal_bias="0.377"
@@ -267,21 +267,22 @@
 
                 <ImageView
                     android:id="@+id/imageView6"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
                     android:layout_marginStart="24dp"
                     app:layout_constraintBottom_toBottomOf="@+id/go_to_location_btn"
                     app:layout_constraintStart_toStartOf="@+id/go_to_location_btn"
                     app:layout_constraintTop_toTopOf="@+id/go_to_location_btn"
                     app:layout_constraintVertical_bias="0.533"
-                    app:srcCompat="@drawable/location" />
+                    app:srcCompat="@drawable/location"
+                    android:contentDescription="@string/location_st" />
 
                 <TextView
                     android:id="@+id/textView13"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="현재 위치를 입력받아  \n돌림판을 돌립니다."
-                    android:textSize="10sp"
+                    android:text="@string/location_random_desc"
+                    android:textSize="12sp"
                     app:layout_constraintBottom_toBottomOf="@+id/go_to_location_btn"
                     app:layout_constraintEnd_toEndOf="@+id/go_to_location_btn"
                     app:layout_constraintHorizontal_bias="0.25"

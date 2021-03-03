@@ -39,9 +39,8 @@ class BaseRoulette {
     fun rotateRoulette(pieChart: PieChart): Int {
         val random = Random()
         val randomNum = random.nextInt(360) + 1440
-        Log.d("randomNumber", randomNum.toFloat().toString())
 
-        pieChart.spin(1000, 0f, -randomNum.toFloat(), Easing.EaseInOutQuad)
+        pieChart.spin(1440, 0f, -randomNum.toFloat(), Easing.EaseInOutQuad)
 
         return randomNum
     }

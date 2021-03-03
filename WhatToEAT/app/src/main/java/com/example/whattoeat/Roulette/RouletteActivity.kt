@@ -83,7 +83,7 @@ class RouletteActivity : AppCompatActivity() {
                 resultTextView.text = result
                 resultTextView.visibility = View.VISIBLE
             }
-        }, 2500)
+        }, 1450)
     }
 
     private fun init() {
@@ -106,7 +106,7 @@ class RouletteActivity : AppCompatActivity() {
                 run() {
                     nextButton.visibility = View.VISIBLE
                 }
-            }, 2500)
+            }, 1460)
 
             rotateButton.visibility = View.GONE
         } else if (case == 1) {
