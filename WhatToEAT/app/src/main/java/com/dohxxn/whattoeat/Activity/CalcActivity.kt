@@ -1,4 +1,4 @@
-package com.example.whattoeat.Activity
+package com.dohxxn.whattoeat.Activity
 
 import android.animation.ObjectAnimator
 import android.os.Bundle
@@ -7,7 +7,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.whattoeat.R
+import com.dohxxn.whattoeat.R
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.MobileAds

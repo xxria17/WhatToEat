@@ -1,10 +1,9 @@
-package com.example.whattoeat.Activity
+package com.dohxxn.whattoeat.Activity
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
-import com.example.whattoeat.R
+import com.dohxxn.whattoeat.R
 
 
 class SplashActivity : AppCompatActivity() {

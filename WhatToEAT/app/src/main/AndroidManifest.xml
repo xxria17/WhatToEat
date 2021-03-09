@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.whattoeat">
+    package="com.dohxxn.whattoeat">
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
@@ -16,7 +16,7 @@
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="@string/banner_ad_unit_id"/>
 
-        <activity android:name=".Activity.SplashActivity"
+        <activity android:name="com.dohxxn.whattoeat.Activity.SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,11 +24,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.AppInfoActivity" />
-        <activity android:name=".Roulette.RouletteActivity" />
-        <activity android:name=".Activity.CalcActivity" />
-        <activity android:name=".Activity.InputActivity" />
-        <activity android:name=".Activity.MainActivity">
+        <activity android:name="com.dohxxn.whattoeat.Activity.AppInfoActivity" />
+        <activity android:name="com.dohxxn.whattoeat.Roulette.RouletteActivity" />
+        <activity android:name="com.dohxxn.whattoeat.Activity.CalcActivity" />
+        <activity android:name="com.dohxxn.whattoeat.Activity.InputActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.dohxxn.whattoeat.Activity.MainActivity">
 
         </activity>
     </application>
