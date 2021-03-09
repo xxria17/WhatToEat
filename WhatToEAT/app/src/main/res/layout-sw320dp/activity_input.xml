@@ -80,15 +80,17 @@
             android:paddingStart="10dp"
             android:paddingEnd="5dp" />
 
-        <Button
+        <ImageView
             android:id="@+id/edit_button"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginEnd="5dp"
-            android:background="@drawable/stroke_button" />
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/arrow"
+            android:tint="@color/colorPrimary"/>
     </LinearLayout>
 
     <ScrollView
+        android:id="@+id/input_scrollView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
