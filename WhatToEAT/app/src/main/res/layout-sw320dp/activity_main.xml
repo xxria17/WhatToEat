@@ -43,7 +43,7 @@
                     android:id="@+id/app_info"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="24dp"
                     android:layout_marginBottom="16dp"
                     android:text="@string/appinfo_st"
                     android:textColor="@color/black"
@@ -52,8 +52,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.498"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/go_to_calc_btn"
-                    app:layout_constraintVertical_bias="1.0" />
+                    app:layout_constraintTop_toBottomOf="@+id/go_to_location_btn" />
 
                 <View
                     android:id="@+id/go_to_random_btn"
@@ -75,9 +74,9 @@
                     android:layout_height="130dp"
                     android:layout_marginTop="20dp"
                     android:alpha="0.3"
-                    android:foreground="?attr/selectableItemBackground"
                     android:background="@drawable/random_btn_design"
                     android:backgroundTint="#249C9A"
+                    android:foreground="?attr/selectableItemBackground"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.491"
                     app:layout_constraintStart_toStartOf="parent"
@@ -94,7 +93,7 @@
                     android:foreground="?attr/selectableItemBackground"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/go_to_input_btn" />
+                    app:layout_constraintTop_toBottomOf="@+id/go_to_calc_btn" />
 
                 <View
                     android:id="@+id/go_to_calc_btn"
@@ -108,7 +107,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.491"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/go_to_location_btn" />
+                    app:layout_constraintTop_toBottomOf="@+id/go_to_input_btn" />
 
                 <TextView
                     android:id="@+id/textView2"
@@ -147,7 +146,7 @@
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="@+id/go_to_calc_btn"
-                    app:layout_constraintHorizontal_bias="0.8"
+                    app:layout_constraintHorizontal_bias="0.462"
                     app:layout_constraintStart_toEndOf="@+id/imageView3"
                     app:layout_constraintTop_toTopOf="@+id/go_to_calc_btn" />
 
@@ -230,12 +229,12 @@
                     android:id="@+id/imageView4"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
+                    android:contentDescription="@string/input_desc"
                     android:tint="@color/white"
                     app:layout_constraintBottom_toBottomOf="@+id/imageView2"
                     app:layout_constraintEnd_toEndOf="@+id/imageView2"
                     app:layout_constraintStart_toStartOf="@+id/imageView2"
                     app:layout_constraintTop_toTopOf="@+id/imageView2"
-                    android:contentDescription="@string/input_desc"
                     app:srcCompat="@drawable/edit" />
 
                 <TextView
@@ -270,12 +269,12 @@
                     android:layout_width="90dp"
                     android:layout_height="90dp"
                     android:layout_marginStart="24dp"
+                    android:contentDescription="@string/location_st"
                     app:layout_constraintBottom_toBottomOf="@+id/go_to_location_btn"
                     app:layout_constraintStart_toStartOf="@+id/go_to_location_btn"
                     app:layout_constraintTop_toTopOf="@+id/go_to_location_btn"
                     app:layout_constraintVertical_bias="0.533"
-                    app:srcCompat="@drawable/location"
-                    android:contentDescription="@string/location_st" />
+                    app:srcCompat="@drawable/location" />
 
                 <TextView
                     android:id="@+id/textView13"
@@ -289,6 +288,33 @@
                     app:layout_constraintStart_toEndOf="@+id/imageView6"
                     app:layout_constraintTop_toBottomOf="@+id/textView12"
                     app:layout_constraintVertical_bias="0.0" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="300dp"
+                    android:layout_height="130dp"
+                    android:alpha="0.7"
+                    android:background="@drawable/random_btn_design"
+                    android:backgroundTint="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@+id/go_to_location_btn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/go_to_location_btn" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream9"
+                    android:text="준비중입니다"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/app_info"
+                    app:layout_constraintEnd_toEndOf="@+id/go_to_location_btn"
+                    app:layout_constraintHorizontal_bias="0.493"
+                    app:layout_constraintStart_toStartOf="@+id/go_to_location_btn"
+                    app:layout_constraintTop_toTopOf="@+id/go_to_location_btn"
+                    app:layout_constraintVertical_bias="0.364" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
