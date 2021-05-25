@@ -1,4 +1,5 @@
 # 뭐먹양
+https://play.google.com/store/apps/details?id=com.dohxxn.whattoeat
 
 ## 서비스 소개
 <img src = "https://user-images.githubusercontent.com/41279544/119467155-3bb34500-bd80-11eb-9af6-9eb32ce4ef22.PNG">
@@ -49,5 +50,3 @@ pieChart.spin(1000, 0f, -randomNum.toFloat(), Easing.EaseInOutQuad)
 
 <br>
 
-## 플레이스토어 
-https://play.google.com/store/apps/details?id=com.dohxxn.whattoeat
