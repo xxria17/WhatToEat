@@ -1,6 +1,8 @@
 # 뭐먹양
 
 ## 서비스 소개
+<img src = "https://user-images.githubusercontent.com/41279544/119467155-3bb34500-bd80-11eb-9af6-9eb32ce4ef22.PNG">
+
 > 오늘 뭐 먹을지 룰렛을 돌려서 랜덤으로 정하는 안드로이드 어플리케이션.
 
 <br>
