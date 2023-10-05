@@ -1,8 +1,10 @@
 # 뭐먹양
-플레이스토어 https://play.google.com/store/apps/details?id=com.dohxxn.whattoeat
+ <img width="1128" alt="KakaoTalk_Photo_2023-10-05-14-43-34 002" src="https://github.com/xxria17/WhatToEat/assets/41279544/fc96ecc3-a4d5-40ca-a1a1-c7af02281675">
+
+<img width="513" alt="KakaoTalk_Photo_2023-10-05-14-43-34 001" src="https://github.com/xxria17/WhatToEat/assets/41279544/492cac6a-a4cd-4014-8b91-c32da934764e">
+
 
 ## 서비스 소개
-<img src = "https://user-images.githubusercontent.com/41279544/119467155-3bb34500-bd80-11eb-9af6-9eb32ce4ef22.PNG">
 
 > 오늘 뭐 먹을지 룰렛을 돌려서 랜덤으로 정하는 안드로이드 어플리케이션.
 
