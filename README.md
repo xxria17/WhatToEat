@@ -35,7 +35,7 @@
 <br>
 
 
-## 🔧 Skill Stack
+## 🔧 기술 스택
 - Android, Kotlin
 - Android Jetpack (ViewModel, DataBinding)
 - MPAndroidChart - PieChart
@@ -44,7 +44,7 @@
 <br>
 
 
-## 📝 About Project
+## 📝
 ```sh
 플레이스토어에 출시하기 전 기능 테스트를 위해 Espresso와 JUnit으로 UI 테스트, 단위 테스트를 진행하였습니다.
 다양한 기기 지원을 위해 화면 크기별 레이아웃을 지정하는데 노력을 기울였습니다.
