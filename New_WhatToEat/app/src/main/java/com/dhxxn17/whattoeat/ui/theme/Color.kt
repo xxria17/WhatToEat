@@ -15,3 +15,5 @@ val lightGray2 = Color(0xFFFAFAFA)
 val lightGray3 = Color(0xFFECECEC)
 val lightGray4 = Color(0xFFDEDEDE)
 val lightGray5 = Color(0xFFD4D4D4)
+
+val orange = Color(0xFFED804D)
