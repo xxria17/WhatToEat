@@ -1,54 +1,57 @@
-# 뭐먹양
- <img width="1128" alt="KakaoTalk_Photo_2023-10-05-14-43-34 002" src="https://github.com/xxria17/WhatToEat/assets/41279544/fc96ecc3-a4d5-40ca-a1a1-c7af02281675">
+<h1 align="center">뭐먹양 </h1>
+
+<center>
+ <img src="https://github.com/xxria17/WhatToEat/assets/41279544/fc96ecc3-a4d5-40ca-a1a1-c7af02281675" width="1128" align="center"/>
+</center>
+
+> What To Eat? / 뭐먹양 (개인 프로젝트)
+
+<br>
+
+## ✨ 서비스 소개
+```sh
+‘뭐먹양’은 오늘 뭐 먹지? 생각에서 개발 시작하게 된 귀여운 안드로이드 어플리케이션입니다.
+메뉴가 적힌 룰렛이 돌아가는 애니메이션을 통해 재미를 주었습니다.
+플레이스토어에 게시 후 1000건 이상 다운로드 수를 기록하였습니다.
+```
+
+<br>
+
+
+## 🔍 서비스 기능
+- 임의로 정해진 메뉴가 적힌 룰렛을 돌리기
+- 직접 룰렛에 들어갈 항목을 작성하여 룰렛을 돌리기
+- 현재 위치를 받아와 주변 식당을 목록으로 보여주고 랜덤으로 그 중 하나를 골라주기
+- 몇 개의 질문을 통해 추려진 특정 메뉴가 적힌 룰렛 돌리기
+
+<br>
+
+
+## 🔍 서비스 화면
+<img src="https://github.com/xxria17/WhatToEat/assets/41279544/da1122d7-4c22-4443-9e70-4dbc22bf1881" width="300" height="600"/>
+<img src="https://github.com/xxria17/WhatToEat/assets/41279544/8b5a2f95-37cc-4522-8c45-999558abc5fd" width="300" height="600"/>
+<img src="https://github.com/xxria17/WhatToEat/assets/41279544/a49a1fb2-a747-426e-b6ec-1e167ac57f61" width="300" height="600"/>
+
+<br>
+
+
+## 🔧 기술 스택
+- Android, Kotlin
+- Android Jetpack (ViewModel, DataBinding)
+- MPAndroidChart - PieChart
+- Google Places API
+
+<br>
+
+
+## 📝
+```sh
+플레이스토어에 출시하기 전 기능 테스트를 위해 Espresso와 JUnit으로 UI 테스트, 단위 테스트를 진행하였습니다.
+다양한 기기 지원을 위해 화면 크기별 레이아웃을 지정하는데 노력을 기울였습니다.
+플레이스토어에 게시하는 과정을 몸소 느낄 수 있었던 경험이었습니다.
+```
 
 <img width="513" alt="KakaoTalk_Photo_2023-10-05-14-43-34 001" src="https://github.com/xxria17/WhatToEat/assets/41279544/492cac6a-a4cd-4014-8b91-c32da934764e">
 
 
-## 서비스 소개
-
-> 오늘 뭐 먹을지 룰렛을 돌려서 랜덤으로 정하는 안드로이드 어플리케이션.
-
 <br>
-
-## 캡쳐화면
-<img src = "https://user-images.githubusercontent.com/41279544/119465400-96e43800-bd7e-11eb-9af1-103dadbad7d0.jpg" width="300" height="720"><img src = "https://user-images.githubusercontent.com/41279544/119465437-9fd50980-bd7e-11eb-8298-0cabe10f0377.jpg" width="300" height="720">
-
-<img src = "https://user-images.githubusercontent.com/41279544/119465446-a19ecd00-bd7e-11eb-91a3-87e8d0cd47b0.jpg" width="300" height="720"><img src = "https://user-images.githubusercontent.com/41279544/119465421-9c418280-bd7e-11eb-9668-5b1d20d1c4b1.jpg" width="300" height="720">
-
-<br>
-
-## 사용된 룰렛
-
-https://github.com/PhilJay/MPAndroidChart  에서 PieChart 사용
-룰렛의 검정색 핀은 개별적인 이미지뷰입니다. 
-
-<br>
-
-**룰렛 설정**
-```Kotlin
-pieDataSet = PieDataSet(entry, "")
-pieData = PieData(pieDataSet)
-pieChart.data = pieData
-        pieChart.apply {
-            description = null
-            holeRadius = 0f
-            centerText = ""
-            isDrawHoleEnabled = false
-            setEntryLabelColor(Color.DKGRAY)
-            setEntryLabelTextSize(16f)
-        }
-        pieChart.legend.isEnabled = false
-        pieDataSet.setDrawValues(false)
-        pieChart.invalidate()
-```
-
-**룰렛 돌리기**
-```Kotlin
-val random = Random()
-val randomNum = random.nextInt(360) + 1440
-        
-pieChart.spin(1000, 0f, -randomNum.toFloat(), Easing.EaseInOutQuad)
-```
-
-<br>
-
