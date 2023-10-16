@@ -17,3 +17,8 @@ val lightGray4 = Color(0xFFDEDEDE)
 val lightGray5 = Color(0xFFD4D4D4)
 
 val orange = Color(0xFFED804D)
+
+val greenColor = Color(0xFF0F9D58)
+val blueColor = Color(0xFF2196F3)
+val yellowColor = Color(0xFFFFC107)
+val redColor = Color(0xFFF44336)
